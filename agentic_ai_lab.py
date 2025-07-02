@@ -5,7 +5,7 @@ def main():
   user_input = input("Enter your question for the LLM: ")
   try:
     response = ollama.chat(
-      model='mistral:7b-q4',
+      model='gemma3',
       messages=[{'role': 'user', 'content': user_input}]
     )
     print("\n--- LLM Response ---")
